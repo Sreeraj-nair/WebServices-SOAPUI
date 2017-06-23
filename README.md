@@ -49,9 +49,9 @@ Advantages of SOAP -
 - It is not a protocol like SOAP, its just an architectural design. 
 
 ### Response Codes categories? 
-1XX - Information based
-2XX - Success 
-3XX - Redirection 
-4XX - Client error
-5XX - Server error 
+- 1XX - Information based
+- 2XX - Success 
+- 3XX - Redirection 
+- 4XX - Client error
+- 5XX - Server error 
 
