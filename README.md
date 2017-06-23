@@ -27,26 +27,26 @@ Two -
 2) REST Services
 
 ### What is SOAP web services? 
-SOAP - stands for Simple Object Access Protocol
-SOAP can interact with other programming language applications. 
-It is just a protocol which is XML based for accessing web services over the internet. 
-It is recommended by W3C for communication between two applications over the network. 
+- SOAP - stands for Simple Object Access Protocol
+- SOAP can interact with other programming language applications. 
+- It is just a protocol which is XML based for accessing web services over the internet. 
+- It is recommended by W3C for communication between two applications over the network. 
 
 Advantages of SOAP - 
-  1. SOAP has its own security known as WS Security. 
-  2. Language and platform independent. 
+-   1. SOAP has its own security known as WS Security. 
+-   2. Language and platform independent. 
  
  Disadvantages of SOAP - 
-  1. It supports only XML format. 
-  2. It has many standards which we have to follow while working with SOAP UI so that's the reason it is slow. 
-  3. It works with WSDL File only so we can't use other formats like JSON, Header, Cookies and so on. 
+-   1. It supports only XML format. 
+-   2. It has many standards which we have to follow while working with SOAP UI so that's the reason it is slow. 
+-   3. It works with WSDL File only so we can't use other formats like JSON, Header, Cookies and so on. 
   
 ### What is REST/Restful web services? 
-REST - stands for Representational State Transfer 
-It is platform independent. 
-It support multiple format like JSON, HTML, XML, Plain text file too. 
-It is fast as compared to SOAP. 
-It is not a protocol like SOAP, its just an architectural design. 
+- REST - stands for Representational State Transfer 
+- It is platform independent. 
+- It support multiple format like JSON, HTML, XML, Plain text file too. 
+- It is fast as compared to SOAP. 
+- It is not a protocol like SOAP, its just an architectural design. 
 
 ### Response Codes categories? 
 1XX - Information based
