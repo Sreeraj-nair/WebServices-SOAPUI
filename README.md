@@ -64,6 +64,8 @@ or procedure-oriented information.
 define an end point. 
 - 5. Related concrete endpoints are combined into abstract endpoints (services). 
 
+Eg. of WSDL - http://www.webservicex.com/CurrencyConvertor.asmx?wsdl 
+
 ### How to Create Project? 
 
 ### How to create a Test Case? 
