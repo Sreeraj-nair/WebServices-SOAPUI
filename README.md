@@ -58,11 +58,11 @@ Advantages of SOAP -
 ### What is WSDL or WSDL file? 
 - 1. WSDL stands for Web Services Description language. 
 - 2. WSDL is a language for describing web services and how to access them. 
-- 2. WSDL is an XML format for describing services as a set of endpoints operating on messages containing either document-oriented 
+- 3. WSDL is an XML format for describing services as a set of endpoints operating on messages containing either document-oriented 
 or procedure-oriented information. 
-- 3. The operations and messages are described abstractly, then bound to a concrete network protocol and message format to 
+- 4. The operations and messages are described abstractly, then bound to a concrete network protocol and message format to 
 define an end point. 
-- 4. Related concrete endpoints are combined into abstract endpoints (services). 
+- 5. Related concrete endpoints are combined into abstract endpoints (services). 
 
 ### How to Create Project? 
 
