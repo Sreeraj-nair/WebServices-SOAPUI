@@ -151,3 +151,11 @@ Double click on Test Case Name > On the properties tab, click + to create a new 
 Right Click on Test Step > Click on Properties. 
 
      Syntax: ${#Properties#testStepData}
+
+### What is a Manual test step? 
+Create a project within the workspace. Create test suite, test case and Step1 to the test case. Right click and add Step2. 
+Now if you want to add a delay test step. Add a test step Delay 100000 MS = 100 seconds. In this 100 seconds can go to 
+the server and restart it. Pause of 100 seconds. 
+In this case we can add a Manual Test Step, if the server is not getting started. This can be used to perform manual tasks by adding. 
+In the description field mention the task. Expected result is server should be started successfully. 
+When a test runs, a pop up will come up and expect user to enter the acual result and pass/fail the test. 
