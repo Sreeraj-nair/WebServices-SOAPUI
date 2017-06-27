@@ -209,6 +209,9 @@ When a test runs, a pop up will come up and expect user to enter the acual resul
 - Will fetch New York. 
 - Start typing //ns1:GetCityForecastByZIPResponse/ns1:GetCityForecastByZIPResult/ns1:ForecastResult
 This will return all the results. 
+- Start typing //ns1:GetCityForecastByZIPResponse/ns1:GetCityForecastByZIPResult/ns1:ForecastResult[1]/ns1:Description
+This will fetch the description from the first ForecastResult tag. 
+
 
 
 
