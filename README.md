@@ -38,12 +38,10 @@ We have two types of Web Services -
 In XML we have to pass tags as well. 
 
 Components of WSDL - 
-'''xml
-* <types>: Describes datatype used by web service. 
-* <message>: messages used by web services like zip code, address line 1 etc. 
-* <prototype>: Operation performed by web service
-* <bindin>: Communication protocols used in web service. 
-'''xml
+* types: Describes datatype used by web service. 
+* message: messages used by web services like zip code, address line 1 etc. 
+* prototype: Operation performed by web service
+* bindin: Communication protocols used in web service. 
 
 2) REST Services
 
