@@ -177,7 +177,19 @@ When a test runs, a pop up will come up and expect user to enter the acual resul
 - Run the tests, execute successfully, we need to notice only one result is getting saved. 
 - Mode DataSourceLoop to the end of the Steps. 
 
+### Parameterization and Data Driven Testing in SOAPUI PRO
+- We have a Project > Test Suite > Test Case > Test Steps in SOAP UI. 
+- Add SOAP Test Request - Req1 GetCountryByCountryCode.
+- Check if server is working with single data. 
+- Create a xlsx file. In first column provide countryCode and in second column countryName. Save a Excel Workbook named SoapTestData.xlsx  
+- Move to SOAP UI Pro. 
+- Add a TestStep DataSource with Properties Code and Country - Provide file path. 
+- Provide Sheet name - Sheet1
+- Provide starting point - A1. 
+- Execute the step to check by entering 0 to pick all data from excel file. 
+- Best practive put DataSource at the top. 
+- Define the loop to run with multiple data. 
+- Add DataSource Loop Test step. Dounble click and define the data source step (defines number of time loop to run) and Target Step is starting point of the loop i.e. Req1. 
+- Add a Delay step in between. 
+- End point is always DataSource Loop. 
 
-
-- 
-- 
