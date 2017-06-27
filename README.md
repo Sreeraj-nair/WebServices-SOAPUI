@@ -217,6 +217,28 @@ This will fetch the description from the first ForecastResult tag.
 //ns1:ForecastResult[2]/ns1:Description/text()
 -This is how we can write the xpath manually and we can validate response coming from the server and we can validate the tag. 
 
+### XQuery Assertion in SOAP UI. 
+- When we want to validate multiple tag data we go for XQuery assertion. 
+- Go to Property Content, XQuery Match. Click on Add. 
+- Click on Declare. Namespace gets populated. I want the result in this format. 
+  
+    <Result>
+    {
+    for $a in //ns1:GetCityForecastByZIPResponse/ns1:GetCityForecastByZIPResult/ns1:ForecastResult/ns1:Forecast/ns1:WeatherID/text()
+    return $a
+    }
+    </Result>
+    
+    OR
+    
+    <Result>
+    {
+    for $a in //ns1:GetCityForecastByZIPResult/ns1:ForecastResult/ns1:Forecast/ns1:WeatherID/text()
+    return $a
+    }
+    </Result>
+
+
 
 
 
