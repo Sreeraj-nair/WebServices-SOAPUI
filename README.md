@@ -240,7 +240,16 @@ This will fetch the description from the first ForecastResult tag.
       </Result>
 
  '''
-
-
+- XQuery assertion is used to validate multiple data in a single query. Behaves like a query on XML file and can validate data 
+- Now I want to verify MorningLow tag in the xml. 
+ '''xml
+      <result>
+      {
+      for $a in //ns1:GetCityForecastByZIPResult/ns1:ForecastResult/ns1:Forecast/ns1:Temperature/ns1:MorningLow/text()
+      if($a!='error') then return "<pass>AssertionPassed<\pass>"
+      else return "<fail>AssertionFalied</fail>"
+      }
+      </result>
+'''
 
 
