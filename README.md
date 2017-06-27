@@ -198,6 +198,7 @@ When a test runs, a pop up will come up and expect user to enter the acual resul
 - Let's see how we make Xpath assertion. 
 - Go to TestStep. 
 - Click on Assertion tab, click on + button. 
+- Single slash (/) means exact child. If you want to check anywhere in the child use double slash (//)
 - On Property Content bar, select XPath Match. XPath Match Configuration window pops up. By default it is empty. 
 - First we need to set the namespace. For that clare Declare button. SOAP UI will store the url in the name space. 
   
@@ -211,7 +212,10 @@ When a test runs, a pop up will come up and expect user to enter the acual resul
 This will return all the results. 
 - Start typing //ns1:GetCityForecastByZIPResponse/ns1:GetCityForecastByZIPResult/ns1:ForecastResult[1]/ns1:Description
 This will fetch the description from the first ForecastResult tag. 
-
+- For getting text alone //ns1:GetCityForecastByZIPResponse/ns1:GetCityForecastByZIPResult/ns1:ForecastResult[2]/ns1:Description/text()
+- Now we can remove the tags displayed only once in the xml. Like, below we can start from where xml is going to change. 
+//ns1:ForecastResult[2]/ns1:Description/text()
+-This is how we can write the xpath manually and we can validate response coming from the server and we can validate the tag. 
 
 
 
