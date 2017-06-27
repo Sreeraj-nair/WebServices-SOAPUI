@@ -84,6 +84,9 @@ Rest Services are Light Weighted
 * 3. PUT to update resource 
 * 4. DELETE to Delete resource 
 
+SOAP defines W3C standards to be strictly followed, which takes more time to develop, test and use. 
+REST doesn't define too much standards like SOAP. 
+
 ### Response Codes categories? 
 - 1XX - Information based
 - 2XX - Success 
