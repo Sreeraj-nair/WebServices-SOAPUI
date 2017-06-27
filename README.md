@@ -106,12 +106,24 @@ define an end point.
 Eg. of WSDL - http://www.webservicex.com/CurrencyConvertor.asmx?wsdl 
 
 ### How to Create Project? 
+- Right click on the Workspace and click New SOAP project. 
+- Click on OK. 
+- Provide WSDL path and type Project Name. 
+- SOAPUI scans the WSDL file and all the services provided by this WSDL is listed in the tool. 
+- Eg GetCountries service provides all the countries in the word. 
+- Create a Test Suite within the Project. 
 
 ### How to create a Test Case? 
+- Create a Test Case. 
+- Right click on test case, click SOAP Test Request. 
+- Input test case name. 
+- Select a service you want to use in the service. 
 
 ### How to add a Test Step? 
+- A new test step gets created in the test case. 
 
 ### How to add Assertion? 
+- Can use contains, not contains, xpath, xquery so on for validating the response. 
 
 ### How to define properties in SOAP UI? 
 In SOAP UI we can define properties at four levels - 
