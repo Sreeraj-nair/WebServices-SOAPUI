@@ -221,24 +221,25 @@ This will fetch the description from the first ForecastResult tag.
 - When we want to validate multiple tag data we go for XQuery assertion. 
 - Go to Property Content, XQuery Match. Click on Add. 
 - Click on Declare. Namespace gets populated. I want the result in this format. 
-  
-    <Result>
-    {
-    for $a in //ns1:GetCityForecastByZIPResponse/ns1:GetCityForecastByZIPResult/ns1:ForecastResult/ns1:Forecast/ns1:WeatherID/text()
-    return $a
-    }
-    </Result>
+   '''xml
+     
+      <Result>
+      {
+      for $a in //ns1:GetCityForecastByZIPResponse/ns1:GetCityForecastByZIPResult/ns1:ForecastResult/ns1:Forecast/ns1:WeatherID/text()
+      return $a
+      }
+      </Result>
     
-    OR
+      OR
     
-    <Result>
-    {
-    for $a in //ns1:GetCityForecastByZIPResult/ns1:ForecastResult/ns1:Forecast/ns1:WeatherID/text()
-    return $a
-    }
-    </Result>
+      <Result>
+      {
+      for $a in //ns1:GetCityForecastByZIPResult/ns1:ForecastResult/ns1:Forecast/ns1:WeatherID/text()
+      return $a
+      }
+      </Result>
 
-
+ '''xml
 
 
 
