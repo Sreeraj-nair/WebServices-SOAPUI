@@ -239,7 +239,7 @@ This will fetch the description from the first ForecastResult tag.
       }
       </Result>
 
- '''xml
+ '''
 
 
 
