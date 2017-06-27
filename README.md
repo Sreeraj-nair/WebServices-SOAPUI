@@ -128,17 +128,26 @@ Eg. of WSDL - http://www.webservicex.com/CurrencyConvertor.asmx?wsdl
 ### How to define properties in SOAP UI? 
 In SOAP UI we can define properties at four levels. They are also known as variables. 
 - 1. Global Properties - Global properties can be used across all the projects within the workspace. 
+Go to File > Preferences. Global Properties can be define here. 
   
      Syntax: ${globalTestData}
      
 - 2. Project Level Properties - Project level properties can be used across all the test suites within the project. 
+Double click on Project Name > On the properties tab, click + to create a new property. 
 
      Syntax: ${#Project#testProjectData}
 
 - 3. Test Suite Level Properties - Test Suite level properties can be used across all the test cases within the suite. 
+Double click on Test Suite Name > On the properties tab, click + to create a new property. 
 
      Syntax: ${#TestSuite#testSuiteData}
 
 - 4. Test Case Level Properties - Test Case level properties can be user across all the test steps within the test case. 
+Double click on Test Case Name > On the properties tab, click + to create a new property. 
  
      Syntax: ${#TestCase#testCaseData}
+
+- 5. We can also create propeties inside the test case as well. 
+Right Click on Test Step > Click on Properties. 
+
+     Syntax: ${#Properties#testStepData}
