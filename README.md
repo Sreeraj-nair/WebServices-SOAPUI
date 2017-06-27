@@ -1,9 +1,15 @@
 # WebServices-SOAPUI
 
 ### What is WebService?
+
+ - Web Service allows a program to talk to an Engine/Server, instead of using your browser to open a web page. 
+ 
+ - Unlike traditional client/server models, such as Web Server/Web Page system, web services do not provide the user with a GUI. 
+ 
+ - Web Services instead share business logic, data and processes through a programmatic interface across a network. 
+  
  - It is a service that allows communication between different applications developed using different programming languages. It allows 
- us 
-to pass the data over the internet in easy way. 
+ us to pass the data over the internet in easy way. 
 
 - WebService provide an easy way to acheive interoperability. 
 
@@ -22,8 +28,21 @@ Consider the scenario. User opens a web browser. Types in https://www.google.com
 client to the server. And in return server responds back with response code 200 OK. 
 
 ### What types of WebServies are supported by SOAPUI? 
-Two - 
+We have two types of Web Services - 
 1) SOAP Services 
+- SOAP stands for Simple Object Access Protocol. SOAP itself is a protocol. 
+- It is used to exchange between service and application in XML format. 
+- SOAP is a wrapper over HTTP protocol, internally it uses HTTP protocol to transfer and receive XML messages. 
+- SOAP uses Web Service Description Language (WSDL). 
+- Standard, Heavy and Conventional. Heavy because we are sending so much of data to the server and receiving data back from the server. 
+In XML we have to pass tags as well. 
+
+Components of WSDL - 
+* <types>: Describes datatype used by web service. 
+* <message>: messages used by web services like zip code, address line 1 etc. 
+* <prototype>: Operation performed by web service
+* <bindin>: Communication protocols used in web service. 
+
 2) REST Services
 
 ### What is SOAP web services? 
