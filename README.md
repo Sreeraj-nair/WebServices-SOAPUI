@@ -126,7 +126,7 @@ Eg. of WSDL - http://www.webservicex.com/CurrencyConvertor.asmx?wsdl
 - Can use contains, not contains, xpath, xquery so on for validating the response. 
 
 ### How to define properties in SOAP UI? 
-In SOAP UI we can define properties at four levels - 
+In SOAP UI we can define properties at four levels. They are also known as variables. 
 - 1. Global Properties - Global properties can be used across all the projects within the workspace. 
   
      Syntax: ${globalTestData}
