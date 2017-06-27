@@ -44,6 +44,14 @@ Components of WSDL -
 * bindin: Communication protocols used in web service. 
 
 2) REST Services
+- REST is another way to develop web services. 
+- REST users HTTP or other similar protocols. 
+- It uses standard HTTP operations like GET, POST, PUT and DELETE. 
+- New, light weighted, uses WADL (Web Application Description Language). 
+- REST is a set of guidelines how a client should interact with server. 
+- Resource: Data and functionality that a client can access from server is called a resource. 
+- Each resource on server can be utilized by using its unique URI. 
+- Response can be in format HTML, XML, plain text, JSON, PDF etc. 
 
 ### What is SOAP web services? 
 - SOAP - stands for Simple Object Access Protocol
@@ -66,6 +74,15 @@ Advantages of SOAP -
 - It support multiple format like JSON, HTML, XML, Plain text file too. 
 - It is fast as compared to SOAP. 
 - It is not a protocol like SOAP, its just an architectural design. 
+
+Rest Services are Light Weighted 
+- Means less data transfer between client and server machine, ultimately need less bandwidth and fast. 
+- In case of SOAP we can access complete application using WSDL. But in case of REST we can access only 1 functionality (Resource) by using URI. 
+- REST uses main HTTP methods: 
+* 1. GET to retreive resource
+* 2. POST to create resource
+* 3. PUT to update resource 
+* 4. DELETE to Delete resource 
 
 ### Response Codes categories? 
 - 1XX - Information based
