@@ -73,3 +73,21 @@ Eg. of WSDL - http://www.webservicex.com/CurrencyConvertor.asmx?wsdl
 ### How to add a Test Step? 
 
 ### How to add Assertion? 
+
+### How to define properties in SOAP UI? 
+In SOAP UI we can define properties at four levels - 
+- 1. Global Properties - Global properties can be used across all the projects within the workspace. 
+  
+     Syntax: ${globalTestData}
+     
+- 2. Project Level Properties - Project level properties can be used across all the test suites within the project. 
+
+     Syntax: ${#Project#testProjectData}
+
+- 3. Test Suite Level Properties - Test Suite level properties can be used across all the test cases within the suite. 
+
+     Syntax: ${#TestSuite#testSuiteData}
+
+- 4. Test Case Level Properties - Test Case level properties can be user across all the test steps within the test case. 
+ 
+     Syntax: ${#TestCase#testCaseData}
