@@ -193,3 +193,24 @@ When a test runs, a pop up will come up and expect user to enter the acual resul
 - Add a Delay step in between. 
 - End point is always DataSource Loop. 
 
+### XPath Assertion in SOAP UI Free version
+- Create a Project > Test Suite > Test Case > Test Step > SOAP Test Request > Step1_GetCityForcastByZIP. 
+- Let's see how we make Xpath assertion. 
+- Go to TestStep. 
+- Click on Assertion tab, click on + button. 
+- On Property Content bar, select XPath Match. XPath Match Configuration window pops up. By default it is empty. 
+- First we need to set the namespace. For that clare Declare button. SOAP UI will store the url in the name space. 
+  
+   declare namespace soap='http://schemas.xmlsoap.org/soap/envelope';
+   declasre namespace ns1='http://ws.cdyne.com/WeatherWS/';
+   
+- Start typing //ns1:GetCityForecastByZIPResponse/ns1:GetCityForecastByZIPResult/ns1:City
+- Click Select from current. 
+- Will fetch New York. 
+- Start typing //ns1:GetCityForecastByZIPResponse/ns1:GetCityForecastByZIPResult/ns1:ForecastResult
+This will return all the results. 
+
+
+
+
+
