@@ -159,3 +159,25 @@ the server and restart it. Pause of 100 seconds.
 In this case we can add a Manual Test Step, if the server is not getting started. This can be used to perform manual tasks by adding. 
 In the description field mention the task. Expected result is server should be started successfully. 
 When a test runs, a pop up will come up and expect user to enter the acual result and pass/fail the test. 
+
+### What is a Data Source and Data Sink in SoapUI PRO? 
+- Create a new SOAP project using WSDL. Provide name DataSource. 
+- Scanning the WSDL and populate the operations. 
+- Inside the suite, create case1, inside the case create Step1_Add. 
+- Add DataSource and place it at the start. Create value1 and value2.
+- Create an excel file with value1 and value2 in A and B columns of excel file. 
+- Name the file as Input.xls, save it. 
+- Provide the location of the xls in the File path. 
+- Provide worksheet name - Sheet1
+- Provide first column name, Sheet at Cell - A1
+- Run the step, all the data from the excel will be populated. 
+- Go to test step and provide references to Data Source - value1 and value2 for test data.
+- To execute the test in loop, we need to add DataSource Loop. Starting with Step1_Add and end with DataSource Loop. 
+- For storing the results in File, add another step called DataSink. Provide the file path. 
+- Run the tests, execute successfully, we need to notice only one result is getting saved. 
+- Mode DataSourceLoop to the end of the Steps. 
+
+
+
+- 
+- 
